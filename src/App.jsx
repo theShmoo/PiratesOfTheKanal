@@ -61,7 +61,7 @@ const App = () => (
     </Parallax>
     <Separator />
     <Parallax
-      bgImage={'/img/4.jpg'}
+      bgImage={'img/4.jpg'}
       strength={400}
       blur={{ min: -1, max: 3 }}>
       <ParallaxBox>
