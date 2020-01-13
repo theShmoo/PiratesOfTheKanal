@@ -12,7 +12,7 @@ const insideStyles = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%,-50%)",
-  fontSize: 50,
+  fontSize: 40,
   fontWeight: 100
 };
 const ParallaxBox = (props) => {
@@ -26,7 +26,7 @@ const App = () => (
   <div style={styles}>
     <Parallax
         bgImage={'img/1.jpg'}
-        strength={400}
+        strength={200}
         blur={{ min: -1, max: 3 }}
     >
       <ParallaxBox>
@@ -38,7 +38,7 @@ const App = () => (
     <Separator />
     <Parallax
         bgImage={'img/2.jpg'}
-        strength={400}
+        strength={200}
         blur={{ min: -1, max: 3 }}
     >
       <ParallaxBox>
@@ -50,19 +50,18 @@ const App = () => (
     <Separator />
     <Parallax
       bgImage={'img/3.jpg'}
-      strength={400}
+      strength={200}
       blur={{ min: -1, max: 3 }}>
       <ParallaxBox>
         <div style={insideStyles}>
-          Treffpunkt um 15:00 Uhr <br/>
-          dort beim Kanal halt...
+          um 15:00 Uhr
         </div>
       </ParallaxBox>
     </Parallax>
     <Separator />
     <Parallax
       bgImage={'img/4.jpg'}
-      strength={400}
+      strength={200}
       blur={{ min: -1, max: 3 }}>
       <ParallaxBox>
         <div style={insideStyles}>
