@@ -1,0 +1,35 @@
+{
+  "name": "PiratesOfTheKanal",
+  "description": "A web app for the tubing event Pirates of the Kanal.",
+  "author": "David Pfahler",
+  "version": "0.0.1",
+  "homepage": "https://theshmoo.github.io/PiratesOfTheKanal",
+  "dependencies": {
+    "react-parallax": "latest",
+    "gh-pages": "latest",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-scripts": "latest"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "repository": "github:theShmoo/PiratesOfTheKanal",
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "license": "MIT"
+}
