@@ -37,13 +37,48 @@ const App = () => (
     </Parallax>
     <Separator />
     <Parallax
+        bgImage={'img/8.jpg'}
+        strength={200}
+        blur={{ min: -1, max: 3 }}
+    >
+      <ParallaxBox>
+        <div style={insideStyles}>
+          das Badner Tubing Event
+        </div>
+      </ParallaxBox>
+    </Parallax>
+    <Separator />
+    <Parallax
+        bgImage={'img/9.jpg'}
+        strength={200}
+        blur={{ min: -1, max: 3 }}
+    >
+      <ParallaxBox>
+        <div style={insideStyles}>
+          am Wiener Neustädter Kanal
+        </div>
+      </ParallaxBox>
+    </Parallax>
+    <Separator />
+    <Parallax
         bgImage={'img/2.jpg'}
         strength={200}
         blur={{ min: -1, max: 3 }}
     >
       <ParallaxBox>
         <div style={insideStyles}>
-          am 22. August 2020
+          22. August 2020
+        </div>
+      </ParallaxBox>
+    </Parallax>
+    <Separator />
+    <Parallax
+      bgImage={'img/5.jpg'}
+      strength={200}
+      blur={{ min: -1, max: 3 }}>
+      <ParallaxBox>
+        <div style={insideStyles}>
+          15:00 Uhr
         </div>
       </ParallaxBox>
     </Parallax>
@@ -54,18 +89,29 @@ const App = () => (
       blur={{ min: -1, max: 3 }}>
       <ParallaxBox>
         <div style={insideStyles}>
-          um 15:00 Uhr
+          bis Sonnenuntergang
         </div>
       </ParallaxBox>
     </Parallax>
     <Separator />
     <Parallax
-      bgImage={'img/4.jpg'}
+      bgImage={'img/6.jpg'}
       strength={200}
       blur={{ min: -1, max: 3 }}>
       <ParallaxBox>
         <div style={insideStyles}>
-          Tubes nicht vergessen!
+          mit vielen Features
+        </div>
+      </ParallaxBox>
+    </Parallax>
+    <Separator />
+    <Parallax
+      bgImage={'img/7.jpg'}
+      strength={200}
+      blur={{ min: -1, max: 3 }}>
+      <ParallaxBox>
+        <div style={insideStyles}>
+          sei dabei
         </div>
       </ParallaxBox>
     </Parallax>
