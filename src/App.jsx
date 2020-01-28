@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Provider, Heading, Subhead, Flex
+  Provider, Heading, Subhead
 } from 'rebass'
 import {
   Hero, ScrollDownIndicator, Section, Checklist, Testimony
