@@ -1,10 +1,11 @@
-import React from 'react';
-import {
-  Provider, Heading, Subhead
-} from 'rebass'
+import React from "react";
+import { Heading } from "rebass"
+import { ThemeProvider } from 'emotion-theming'
+import preset from '@rebass/preset'
 import {
   Hero, ScrollDownIndicator, Section, Checklist, Testimony
-} from 'react-landing-page'
+} from "react-landing-page"
+import MyMap from "./MyMap"
 
 const featherCheckmark = <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -26,26 +27,32 @@ const FastHero = (props) => {
       bgOpacity={props.opacity ? props.opacity : 0.4}
       backgroundImage={props.img}
     >
-      {props.heading ? <Heading fontSize={[ 4, 5, 6, 7, 8 ]}>{props.heading}</Heading> : ""}
-      {props.subheading ? <Subhead fontSize={[ 1, 2, 3, 4, 5 ]}>{props.subheading}</Subhead> : ""}
+      {props.heading ? <Heading
+          bg="rgba(77, 200, 233, 0.6)"
+          p="1ex"
+          >{props.heading}</Heading> : ""}
+      {props.subheading ? <Heading
+        bg="rgba(77, 200, 233, 0.6)"
+        p="1ex"
+        >{props.subheading}</Heading> : ""}
       <ScrollDownIndicator/>
     </Hero>
 }
 
 const App = props => (
-  <Provider>
+  <ThemeProvider theme={preset}>
     <FastHero
       img="img/1.jpg"
       heading="Pirates of the Kanal"
       subheading="das Badner Tubing Event" />
     <Section width={1}
-      heading='Hard Facts'>
+      heading="Hard Facts">
       <Checklist
         children={[
-          'auf dem Wiener Neustädter Kanal',
-          'am 22. August 2020',
-          'von 15:00 Uhr',
-          'bis Sonnenuntergang',
+          "auf dem Wiener Neustädter Kanal",
+          "am 22. August 2020",
+          "von 15:00 Uhr",
+          "bis Sonnenuntergang",
         ]}
         checkmark={featherCheckmark}/>
     </Section>
@@ -55,30 +62,42 @@ const App = props => (
       subheading="Relax, Recover, Restore"/>
     <Section
       width={1}
-      heading='Was unsere Tuber sagen'
+      heading="Was unsere Tuber sagen"
       justifyContent="space-around">
         <Testimony
           authorAvatar="img/avatar_2.jpg"
-          authorTitle="Tuber">
+          authorTitle="Tuber"
+          p="1ex">
              Amazing Experience and I would definitely do it again. Good services, staff were very friendly and inviting. A life time experience.
         </Testimony>
         <Testimony
           authorAvatar="img/avatar.jpg"
           authorName="Lakob Julich"
-          authorTitle="Tubing Expert">
+          authorTitle="Tubing Expert"
+          p="1ex">
             Best. Tubing. Ever.
         </Testimony>
     </Section>
     <FastHero
+      img="img/5.jpg"
+      heading="Aber Wo genau?"/>
+    <Section width={1}
+      heading="Da." />
+    <Hero alignItems="flex-start" alignContent="flex-start" justifyContent="flex-start">
+      <MyMap/>
+    </Hero>
+    <Section width={1}
+      heading="Dort." />
+    <FastHero
       img="img/4.jpg"
       heading="Stay Tubed!"/>
     <Section width={1}
-      heading='Du brauchst mit'>
+      heading="Du brauchst">
       <Checklist
         children={[
-          'Einen Tube',
-          'Proviant',
-          'Zuschauer',
+          "Tube",
+          "Proviant",
+          "Zuschauer",
         ]}
         checkmark={featherCheckmark}/>
     </Section>
@@ -87,9 +106,9 @@ const App = props => (
       opacity={0.01}
     />
     <Section width={1}
-      heading='Tube on'>
+      heading="Tube on">
     </Section>
-  </Provider>
+  </ThemeProvider>
 )
 
 export default App;

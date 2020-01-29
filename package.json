@@ -5,14 +5,17 @@
   "version": "0.0.1",
   "homepage": "https://theshmoo.github.io/PiratesOfTheKanal",
   "dependencies": {
-    "react-landing-page": "latest",
+    "@rebass/preset": "latest",
+    "emotion-theming": "latest",
     "gh-pages": "latest",
+    "google-maps-react": "latest",
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-landing-page": "latest",
     "react-scripts": "latest",
-    "rebass": "^2.1.0",
-    "styled-components": "^3.0.0"
+    "rebass": "latest",
+    "styled-components": "latest"
   },
   "scripts": {
     "predeploy": "npm run build",
