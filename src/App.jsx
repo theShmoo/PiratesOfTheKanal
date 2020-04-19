@@ -99,7 +99,7 @@ const Checklist = ({items, checkmark}) => {
 const Hero = ({heading, subheading, img, children}) => {
   const classes = useStyles();
   const style = img ? {
-        background: "url(PiratesOfTheKanal/" + img + ") no-repeat center center",
+        background: "url(" + img + ") no-repeat center center",
         backgroundSize: "cover",
         resize: "both",
       } : {};
