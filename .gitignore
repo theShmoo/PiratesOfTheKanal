@@ -106,5 +106,5 @@ dist
 .tern-port
 
 # sublime files
-.sublime-project
-.sublime-workspace
+*.sublime-project
+*.sublime-workspace
