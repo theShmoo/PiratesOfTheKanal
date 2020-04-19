@@ -5,17 +5,15 @@
   "version": "0.0.1",
   "homepage": "https://theshmoo.github.io/PiratesOfTheKanal",
   "dependencies": {
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "latest",
     "gh-pages": "latest",
     "leaflet": "latest",
     "react-leaflet": "latest",
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-scripts": "latest",
-    "rebass": "latest",
-    "@rebass/preset": "latest",
-    "emotion-theming": "latest",
-    "styled-components": "latest"
+    "react-scripts": "latest"
   },
   "scripts": {
     "predeploy": "npm run build",
