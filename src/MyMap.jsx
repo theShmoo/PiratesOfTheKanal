@@ -1,63 +1,38 @@
-import React, {Component} from 'react';
-import {
-  Map, GoogleApiWrapper, Marker, InfoWindow
-} from 'google-maps-react';
+import React, {Component}  from 'react';
+import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
+import 'leaflet/dist/leaflet.css'
+import L from 'leaflet';
 
-const mapStyles = {
-  width: "100%",
-  height: "100%"
-};
+delete L.Icon.Default.prototype._getIconUrl;
 
-const startPosition = {
-  lat: 47.987884, lng: 16.255677
-};
+L.Icon.Default.mergeOptions({
+    iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+    iconUrl: require('leaflet/dist/images/marker-icon.png'),
+    shadowUrl: require('leaflet/dist/images/marker-shadow.png')
+});
 
-class MyMap extends Component {
-  state = {
-    showingInfoWindow: false,
-    activeMarker: {},
-    selectedPlace: {},
-  };
+const position = [
+  47.987884, 16.255677
+];
 
-  onMarkerClick = (props, marker, e) =>
-    this.setState({
-      selectedPlace: props,
-      activeMarker: marker,
-      showingInfoWindow: true
-    });
+const mapStyle = {
+  position: "absolute",
+  width: "80%",
+  height: "80%"
+}
 
-  onMapClicked = (props) => {
-    if (this.state.showingInfoWindow) {
-      this.setState({
-        showingInfoWindow: false,
-        activeMarker: null
-      })
-    }
-  };
-  render()
-  {
-    return <Map
-      google={this.props.google}
-      zoom={15}
-      style={mapStyles}
-      initialCenter={startPosition}
-      onClick={this.onMapClicked}
-    >
-      <Marker
-        position={startPosition}
-        onClick={this.onMarkerClick}
-        name="Start und Ziel" />
-      <InfoWindow
-        marker={this.state.activeMarker}
-        visible={this.state.showingInfoWindow}>
-          <div>
-              <h1>{this.state.selectedPlace.name}</h1>
-            </div>
-        </InfoWindow>
+export default class MyMap extends Component{
+render() {
+  return (
+    <Map center={position} zoom={13} style={mapStyle}>
+      <TileLayer
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+      />
+      <Marker position={position}>
+        <Popup>Start und Ziel</Popup>
+      </Marker>
     </Map>
-  }
-};
-
-export default GoogleApiWrapper({
-  apiKey: 'XXXX'
-})(MyMap);
+  );
+}
+}

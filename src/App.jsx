@@ -1,24 +1,15 @@
 import React from "react";
 import { Heading } from "rebass"
 import { ThemeProvider } from 'emotion-theming'
-import preset from '@rebass/preset'
-import {
-  Hero, ScrollDownIndicator, Section, Checklist, Testimony
-} from "react-landing-page"
-import MyMap from "./MyMap"
+import theme from '@rebass/preset'
 
-const featherCheckmark = <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="24" height="24"
-  viewBox="0 0 24 24"
-  fill="none" stroke="currentColor"
-  strokeWidth="2"
-  strokeLinecap="round"
-  strokeLinejoin="round"
->
-  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-  <polyline points="22 4 12 14.01 9 11.01"/>
-</svg>
+import Hero from "./Hero"
+import ScrollDownIndicator from "./ScrollDownIndicator"
+import Checklist from "./Checklist"
+import Section from "./Section"
+import Testimony from "./Testimony"
+import MyMap from "./MyMap"
+import {featherCheckmark} from "./FeatherCheckmark"
 
 const FastHero = (props) => {
     return <Hero
@@ -28,11 +19,13 @@ const FastHero = (props) => {
       backgroundImage={props.img}
     >
       {props.heading ? <Heading
-          bg="rgba(77, 200, 233, 0.6)"
+          fontSize={[ 5, 6, 7 ]}
+          bg='primary'
           p="1ex"
           >{props.heading}</Heading> : ""}
       {props.subheading ? <Heading
-        bg="rgba(77, 200, 233, 0.6)"
+        fontSize={[ 5, 6, 7 ]}
+        bg='primary'
         p="1ex"
         >{props.subheading}</Heading> : ""}
       <ScrollDownIndicator/>
@@ -40,7 +33,7 @@ const FastHero = (props) => {
 }
 
 const App = props => (
-  <ThemeProvider theme={preset}>
+  <ThemeProvider theme={theme}>
     <FastHero
       img="img/1.jpg"
       heading="Pirates of the Kanal"
@@ -72,7 +65,7 @@ const App = props => (
         </Testimony>
         <Testimony
           authorAvatar="img/avatar.jpg"
-          authorName="Lakob Julich"
+          authorName="Lakob"
           authorTitle="Tubing Expert"
           p="1ex">
             Best. Tubing. Ever.
@@ -83,8 +76,9 @@ const App = props => (
       heading="Aber Wo genau?"/>
     <Section width={1}
       heading="Da." />
-    <Hero alignItems="flex-start" alignContent="flex-start" justifyContent="flex-start">
-      <MyMap/>
+    <Hero>
+      <MyMap />
+      <ScrollDownIndicator/>
     </Hero>
     <Section width={1}
       heading="Dort." />
