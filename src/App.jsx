@@ -141,7 +141,7 @@ const App = props => {
         items={[
           "auf dem Wiener Neustädter Kanal",
           "am 22. August 2020",
-          "von 15:00 Uhr",
+          "ab 15:00 Uhr",
           "bis Sonnenuntergang",
         ]}/>
     </Section>
