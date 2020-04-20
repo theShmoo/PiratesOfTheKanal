@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/PiratesOfTheKanal/precache-manifest.977dd91a7038f629a985e4355efcd92f.js"
+  "/PiratesOfTheKanal/precache-manifest.aaf7f1175e6ff49d055bc3d1ae25e388.js"
 );
 
 self.addEventListener('message', (event) => {
