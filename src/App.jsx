@@ -132,10 +132,16 @@ const Testimony = ({avatar, name, title, children}) => {
 const App = props => {
   const classes = useStyles();
   return <Grid container spacing={2} className={classes.root}>
+    <Section>
+      <Typography variant="h1" color="primary" className={classes.text}>
+        Pirates of the Kanal
+      </Typography>
+      <Typography variant="h2" color="secondary" className={classes.text}>
+        das Badner Tubing Event
+      </Typography>
+    </Section>
     <Hero
-      img="img/1.jpg"
-      heading="Pirates of the Kanal"
-      subheading="das Badner Tubing Event" />
+      img="img/1.jpg" />
     <Section heading="Hard Facts">
       <Checklist
         items={[
