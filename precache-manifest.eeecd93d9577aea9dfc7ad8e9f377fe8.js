@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "32ec41a1bb3b06f8ec32bf7b02d591cd",
+    "revision": "3200b20c204c20ef3b540a525d0c568c",
     "url": "/PiratesOfTheKanal/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/PiratesOfTheKanal/static/js/2.7c2fc7c2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9e3b7a2d0103f8fa0073",
-    "url": "/PiratesOfTheKanal/static/js/main.97e993a4.chunk.js"
+    "revision": "34493d81f8a36cd0002b",
+    "url": "/PiratesOfTheKanal/static/js/main.2d57e740.chunk.js"
   },
   {
     "revision": "90777c152055b864b751",

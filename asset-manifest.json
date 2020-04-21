@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/PiratesOfTheKanal/static/js/main.97e993a4.chunk.js",
-    "main.js.map": "/PiratesOfTheKanal/static/js/main.97e993a4.chunk.js.map",
+    "main.js": "/PiratesOfTheKanal/static/js/main.2d57e740.chunk.js",
+    "main.js.map": "/PiratesOfTheKanal/static/js/main.2d57e740.chunk.js.map",
     "runtime-main.js": "/PiratesOfTheKanal/static/js/runtime-main.9207724e.js",
     "runtime-main.js.map": "/PiratesOfTheKanal/static/js/runtime-main.9207724e.js.map",
     "static/css/2.6f3a26c5.chunk.css": "/PiratesOfTheKanal/static/css/2.6f3a26c5.chunk.css",
     "static/js/2.7c2fc7c2.chunk.js": "/PiratesOfTheKanal/static/js/2.7c2fc7c2.chunk.js",
     "static/js/2.7c2fc7c2.chunk.js.map": "/PiratesOfTheKanal/static/js/2.7c2fc7c2.chunk.js.map",
     "index.html": "/PiratesOfTheKanal/index.html",
-    "precache-manifest.821e3bb2549517f59e23a506138b8f15.js": "/PiratesOfTheKanal/precache-manifest.821e3bb2549517f59e23a506138b8f15.js",
+    "precache-manifest.eeecd93d9577aea9dfc7ad8e9f377fe8.js": "/PiratesOfTheKanal/precache-manifest.eeecd93d9577aea9dfc7ad8e9f377fe8.js",
     "service-worker.js": "/PiratesOfTheKanal/service-worker.js",
     "static/css/2.6f3a26c5.chunk.css.map": "/PiratesOfTheKanal/static/css/2.6f3a26c5.chunk.css.map",
     "static/js/2.7c2fc7c2.chunk.js.LICENSE.txt": "/PiratesOfTheKanal/static/js/2.7c2fc7c2.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.9207724e.js",
     "static/css/2.6f3a26c5.chunk.css",
     "static/js/2.7c2fc7c2.chunk.js",
-    "static/js/main.97e993a4.chunk.js"
+    "static/js/main.2d57e740.chunk.js"
   ]
 }
