@@ -21,38 +21,32 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       padding: theme.spacing(3),
-      margin: theme.spacing(1),
       display: 'inherit',
-      width: '100%',
-      height: '100%',
-    },
-    main: {
-      padding: theme.spacing(2),
-      margin: theme.spacing(1),
-      width: '100%',
       height: '100%',
     },
     hero: {
-      width: '100%',
       height: '90%',
     },
     fullscale: {
-      width: '100%',
       height: '100%',
     },
     list: {
-      width: '100%',
       maxWidth: 360
     },
     section: {
       margin: theme.spacing(3),
       padding: theme.spacing(2),
-      width: '100%',
       height: '100%',
     },
     text: {
       padding: theme.spacing(1),
       margin: theme.spacing(1),
+    },
+    header: {
+      fontSize: '4rem'
+    },
+    subheader: {
+      fontSize: '2.5rem'
     }
   }),
 );
@@ -133,10 +127,10 @@ const App = props => {
   const classes = useStyles();
   return <Grid container spacing={2} className={classes.root}>
     <Section>
-      <Typography variant="h1" color="primary" className={classes.text}>
+      <Typography variant="h1" color="primary" className={classes.header}>
         Pirates of the Kanal
       </Typography>
-      <Typography variant="h2" color="secondary" className={classes.text}>
+      <Typography variant="h2" color="secondary" className={classes.subheader}>
         das Badner Tubing Event
       </Typography>
     </Section>
