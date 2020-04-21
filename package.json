@@ -2,7 +2,7 @@
   "name": "PiratesOfTheKanal",
   "description": "A web app for the tubing event Pirates of the Kanal.",
   "author": "David Pfahler",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "homepage": "https://theshmoo.github.io/PiratesOfTheKanal",
   "dependencies": {
     "@material-ui/core": "latest",
