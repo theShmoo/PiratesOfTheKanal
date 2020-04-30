@@ -16,6 +16,7 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 
 import withRoot from './withRoot';
 import MyMap from "./MyMap"
+import FormDialog from "./Register";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -173,10 +174,12 @@ const App = props => {
     <Hero>
       <MyMap />
     </Hero>
-    <Section heading="Dort." />
+    <Section heading="Stay Tubed!">
+      <FormDialog />
+    </Section>
     <Hero
-      img="img/4.jpg"
-      heading="Stay Tubed!"/>
+      img="img/4.jpg">
+    </Hero>
     <Section heading="Du brauchst">
       <Checklist
         items={[
