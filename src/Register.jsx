@@ -23,6 +23,7 @@ const FormDialog = ({classes}) => {
   const [done, setDone] = React.useState(false);
   const hasError = error !== ""
   const handleRegister = () => {
+    if(hasError) return;
     const url = 'http://potcs.pfahler.at/subscribe';
     const msg = {
       method: 'POST',
@@ -38,13 +39,13 @@ const FormDialog = ({classes}) => {
           setDone(true);
         }
         else {
-           setError("sending failed...");
+           setError("Mein Server mag diese Mail Adresse nicht...");
         }
       })
       // this would recover the error message
       //.then( data => setError("sending failed..." + data.errors[0].msg))
       .catch(() => {
-          setError("sending failed...");
+          setError("Fehler beim Sender der Adresse...");
       });
   };
 
@@ -76,6 +77,12 @@ const FormDialog = ({classes}) => {
         helperText={error}
         type="email"
         onChange={handleChange}
+        onKeyPress={(ev) => {
+          if (ev.key === 'Enter') {
+            handleRegister();
+            ev.preventDefault();
+          }
+        }}
         fullWidth
       />
       <Button
