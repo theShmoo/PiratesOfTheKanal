@@ -24,7 +24,7 @@ const FormDialog = ({classes}) => {
   const hasError = error !== ""
   const handleRegister = () => {
     if(hasError) return;
-    const url = 'http://potcs.pfahler.at/subscribe';
+    const url = 'https://potcs.pfahler.at/subscribe';
     const msg = {
       method: 'POST',
       headers: {
@@ -45,7 +45,7 @@ const FormDialog = ({classes}) => {
       // this would recover the error message
       //.then( data => setError("sending failed..." + data.errors[0].msg))
       .catch(() => {
-          setError("Fehler beim Sender der Adresse...");
+          setError("Fehler beim Senden der Adresse...");
       });
   };
 
