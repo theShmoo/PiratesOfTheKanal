@@ -67,7 +67,6 @@ const FormDialog = ({classes}) => {
         Um Neuigkeiten über diese Website zu abonnieren, gib bitte hier deine E-Mail-Adresse ein. Wir senden gelegentlich Updates.
       </InputLabel>
       <TextField
-        autoFocus
         required
         error={hasError}
         margin="dense"
