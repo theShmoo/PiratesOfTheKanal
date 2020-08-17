@@ -64,7 +64,7 @@ const FormDialog = ({classes}) => {
   return (
     <form className={classes.root}>
       <InputLabel htmlFor="my-email">
-        Um Neuigkeiten über diese Website zu abonnieren, gib bitte hier deine E-Mail-Adresse ein. Wir senden gelegentlich Updates.
+        Bitte melde dich hier unverbindlich an:
       </InputLabel>
       <TextField
         required
@@ -91,7 +91,7 @@ const FormDialog = ({classes}) => {
         className={classes.button}
         color={done ? "secondary" : "primary"}
         endIcon={done ? <DoneIcon /> : <SendIcon />}>
-        Subscribe
+        Anmelden
       </Button>
       {done ? <Typography variant="body1" color="primary">Danke!</Typography> : ""}
     </form>
