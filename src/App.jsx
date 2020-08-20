@@ -165,8 +165,7 @@ const App = props => {
       <Checklist
         items={[
           "Die Aktion findet nur bei Schönwetter statt (eventuelle Absage erfolgt am Freitag)",
-          "Es wird eine Pumpe zum Aufblasen am Treffpunkt vorhanden sein.",
-          "Alternativ kann am Samstag zwischen 12 und 13:30 das Tube in der Meiereigasse 12, 2500 Baden abgegeben werden und es wird aufgeblasen zum Treffpunkt transportiert werden"
+          "Es wird eine Pumpe zum Aufblasen am Treffpunkt vorhanden sein."
         ]} />
     </Section>
     <Hero
