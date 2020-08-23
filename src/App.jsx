@@ -131,7 +131,10 @@ const App = props => {
         Pirates of the Kanal
       </Typography>
       <Typography variant="h2" color="secondary" className={classes.subheader}>
-        das Badner Tubing Event
+        Das Tubing Event
+      </Typography>
+      <Typography variant="body1">
+        Baden bei Wien geht baden nach Wien.
       </Typography>
     </Section>
     <Hero
@@ -139,8 +142,9 @@ const App = props => {
     <Section heading="Hard Facts">
       <Checklist
         items={[
-          "auf dem Wiener Neustädter Kanal",
-          "am 22. August 2020",
+          "Auf dem Donau Kanal",
+          "Von Nussdorf bis Erdberg",
+          "am 21. August 2021",
           "ab 15:00 Uhr",
           "bis Sonnenuntergang",
         ]} />
@@ -150,18 +154,7 @@ const App = props => {
     <Section heading="Floating Facts">
       <Typography variant="body1">
         Wir bitten um eine <a href="#register">Anmeldung</a>, damit wir die Teilnehmerzahl abschätzen können 👍
-        </Typography>
-      <Typography variant="body1">
-        Außerdem empfehlen wir:
-        </Typography>
-      <Checklist
-        items={[
-          "Tragen eines MNS Maske am Treffpunkt und beim Ausstieg",
-          "Einhalten des Mindesabstandes",
-        ]} />
-      <Typography variant="body1">
-        Noch ein paar Infos:
-        </Typography>
+      </Typography>
       <Checklist
         items={[
           "Die Aktion findet nur bei Schönwetter statt (eventuelle Absage erfolgt am Freitag)",
