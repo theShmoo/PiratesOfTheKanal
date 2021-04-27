@@ -108,3 +108,4 @@ dist
 # sublime files
 *.sublime-project
 *.sublime-workspace
+.vs/slnx.sqlite

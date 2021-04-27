@@ -138,19 +138,19 @@ const App = props => {
       </Typography>
     </Section>
     <Hero
-      img="img/1.jpg" />
+      img="img/pirates-of-the-kanal-1.jpg" />
     <Section heading="Hard Facts">
       <Checklist
         items={[
-          "Auf dem Donau Kanal",
-          "Von Nussdorf bis Erdberg",
-          "am 21. August 2021",
+          "Auf der schönen blauen neuen Donau",
+          "Start CopaBeach",
+          "am 28. August 2021",
           "ab 15:00 Uhr",
           "bis Sonnenuntergang",
         ]} />
     </Section>
     <Hero
-      img="img/9.jpg" />
+      img="img/pirates-of-the-kanal-9.jpg" />
     <Section heading="Floating Facts">
       <Typography variant="body1">
         Wir bitten um eine <a href="#register">Anmeldung</a>, damit wir die Teilnehmerzahl abschätzen können 👍
@@ -162,20 +162,20 @@ const App = props => {
         ]} />
     </Section>
     <Hero
-      img="img/7.jpg"
+      img="img/pirates-of-the-kanal-7.jpg"
       heading="Keep calm and float on"
       subheading="Relax, Recover, Restore" />
     <Section
       heading="Was unsere Tuber sagen">
       <List component="nav" className={classes.list}>
         <Testimony
-          avatar="img/avatar_2.jpg"
+          avatar="img/avatar_pirates-of-the-kanal-2.jpg"
           name="Q"
           title="Tuber">
           Amazing Experience and I would definitely do it again. Good services, staff were very friendly and inviting. A life time experience.
         </Testimony>
         <Testimony
-          avatar="img/avatar.jpg"
+          avatar="img/avatapirates-of-the-kanal-r.jpg"
           name="Lakob"
           title="Tubing Expert">
           Best. Tubing. Ever.
@@ -183,7 +183,7 @@ const App = props => {
       </List>
     </Section>
     <Hero
-      img="img/5.jpg"
+      img="img/pirates-of-the-kanal-5.jpg"
       heading="Aber Wo genau?" />
     <Section heading="Da." />
     <Hero>
@@ -195,7 +195,7 @@ const App = props => {
       </Section>
     </div>
     <Hero
-      img="img/4.jpg">
+      img="img/pirates-of-the-kanal-4.jpg">
     </Hero>
     <Section heading="Du brauchst">
       <Checklist
@@ -206,10 +206,12 @@ const App = props => {
         ]} />
     </Section>
     <Hero
-      img="img/8.jpg"
+      img="img/pirates-of-the-kanal-8.jpg"
       opacity={0.01}
     />
     <Section heading="Tube on" />
+    <Hero
+      img="img/pirates-of-the-kanal-10.jpg" />
   </Grid>
 };
 
