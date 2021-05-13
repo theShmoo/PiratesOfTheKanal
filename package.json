@@ -1,8 +1,8 @@
 {
-  "name": "PiratesOfTheKanal",
+  "name": "pirates-of-the-kanal",
   "description": "A web app for the tubing event Pirates of the Kanal.",
   "author": "David Pfahler",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "homepage": ".",
   "dependencies": {
     "@material-ui/core": "latest",

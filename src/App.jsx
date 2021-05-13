@@ -144,7 +144,7 @@ const App = props => {
         items={[
           "Auf der schönen blauen neuen Donau",
           "Start CopaBeach",
-          "am 28. August 2021",
+          "am 4. September 2021",
           "ab 15:00 Uhr",
           "bis Sonnenuntergang",
         ]} />
@@ -169,13 +169,13 @@ const App = props => {
       heading="Was unsere Tuber sagen">
       <List component="nav" className={classes.list}>
         <Testimony
-          avatar="img/avatar_pirates-of-the-kanal-2.jpg"
+          avatar="img/avatar_2.jpg"
           name="Q"
           title="Tuber">
           Amazing Experience and I would definitely do it again. Good services, staff were very friendly and inviting. A life time experience.
         </Testimony>
         <Testimony
-          avatar="img/avatapirates-of-the-kanal-r.jpg"
+          avatar="img/avatar.jpg"
           name="Lakob"
           title="Tubing Expert">
           Best. Tubing. Ever.
