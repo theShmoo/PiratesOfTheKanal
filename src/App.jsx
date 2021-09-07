@@ -142,9 +142,9 @@ const App = props => {
     <Section heading="Hard Facts">
       <Checklist
         items={[
-          "Auf der schönen blauen neuen Donau",
-          "Start CopaBeach",
-          "am 4. September 2021",
+          "Auf dem Donaukanal",
+          "Von Spittelau bis Erdberg",
+          "am 27. August 2021",
           "ab 15:00 Uhr",
           "bis Sonnenuntergang",
         ]} />
